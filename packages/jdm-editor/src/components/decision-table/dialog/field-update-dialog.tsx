@@ -88,7 +88,7 @@ export const FieldUpdate: React.FC<React.PropsWithChildren<FieldUpdateProps>> = 
           </Form.Item>
         )}
         <Form.Item name='name' label='Label' rules={[{ required: true }]}>
-          <Input />
+          PARAM<Input />
         </Form.Item>
         <Form.Item name='field' label='Selector' rules={[{ required: props.columnType === 'outputs' }]}>
           {props.columnType === 'inputs' ? <LocalCodeEditor /> : <AutosizeTextArea maxRows={3} />}
